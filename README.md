@@ -1,51 +1,68 @@
-# Student Performance Prediction using Machine Learning
+# Student Performance Prediction – Machine Learning Project
 
-## 📌 Project Overview
-This project predicts student performance using Machine Learning techniques.
-It uses study hours and sleep hours to:
-- Predict exam marks (Regression)
-- Predict pass/fail outcome (Classification)
+This project was built to understand and apply the complete Machine Learning workflow,
+from data analysis to model building and evaluation.
 
-The project demonstrates a complete end-to-end ML workflow.
+The goal of the project is to predict:
+- Student exam marks (Regression)
+- Whether a student will pass or fail (Classification)
+
+based on simple features like study hours and sleep hours.
 
 ---
 
-## 🧠 Technologies Used
+## Why I Built This Project
+I created this project to strengthen my Machine Learning fundamentals by working on a
+realistic problem. Instead of only learning theory, I wanted to practice how data is
+analyzed, models are trained, and results are evaluated in a real ML pipeline.
+
+---
+
+## What This Project Does
+- Analyzes student performance data
+- Predicts exam marks using Linear Regression
+- Predicts pass/fail outcome using Logistic Regression
+- Evaluates model performance using standard ML metrics
+- Visualizes data trends and model behavior
+
+---
+
+## Dataset Description
+The dataset includes the following columns:
+- **Hours** – Number of hours studied
+- **Sleep** – Number of hours slept
+- **Marks** – Exam score
+- **Pass** – Pass (1) or Fail (0)
+
+The data is created manually to clearly understand the behavior of ML models.
+
+---
+
+## Machine Learning Models Used
+
+### Linear Regression
+- Used to predict student marks
+- Evaluated using Mean Squared Error (MSE) and R² score
+
+### Logistic Regression
+- Used to classify whether a student passes or fails
+- Evaluated using accuracy and confusion matrix
+
+---
+
+## Technologies Used
 - Python
 - Pandas
 - NumPy
 - Scikit-learn
 - Matplotlib
+- Git & GitHub
 
 ---
 
-## 📊 Dataset
-The dataset contains the following features:
-- Hours: Number of hours studied
-- Sleep: Number of hours slept
-- Marks: Exam score
-- Pass: Pass (1) or Fail (0)
+## How to Run the Project
+Run the files in the following order:
 
----
-
-## ⚙️ Machine Learning Models
-### 1. Linear Regression
-- Used to predict exam marks
-- Evaluated using Mean Squared Error (MSE) and R² score
-
-### 2. Logistic Regression
-- Used to predict pass/fail outcome
-- Evaluated using accuracy and confusion matrix
-
----
-
-## 📈 Visualization
-- Scatter plot of Hours vs Marks
-- Regression line to show model predictions
-
----
-
-## 🚀 How to Run
 ```bash
 python3 data.py
 python3 eda.py
